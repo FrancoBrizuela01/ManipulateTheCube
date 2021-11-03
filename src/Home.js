@@ -1,5 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import styled from "styled-components";
+
+const HomeContainer = styled.div`
+  width: calc(100% - 250px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -13,7 +21,7 @@ const variants = {
 
 export default function Home({ selectedMode }) {
   return (
-    <div className="home">
+    <HomeContainer>
       <motion.div
         initial={"open"}
         animate={selectedMode}
@@ -23,6 +31,6 @@ export default function Home({ selectedMode }) {
       >
         MANIPULATE
       </motion.div>
-    </div>
+    </HomeContainer>
   );
 }
