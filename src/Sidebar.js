@@ -32,7 +32,15 @@ const Sidebar = ({ setSelectedMode }) => {
     setSelectedMode(mode);
   };
 
-  const options = ["closed", "open", "big", "normal", "small", "rotate"];
+  const options = [
+    "closed",
+    "open",
+    "big",
+    "normal",
+    "small",
+    "rotate",
+    "circle",
+  ];
 
   return (
     <SidebarContainer>
